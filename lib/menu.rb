@@ -5,6 +5,7 @@ class Menu
     @items = items
   end 
 
+
   def print_items
     items.map { |name, price| 
     "%s £%.2f" % [name.to_s.upcase, price]}.join(", ")

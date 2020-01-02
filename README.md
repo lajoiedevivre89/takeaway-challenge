@@ -19,6 +19,10 @@ Both menu and takeaway instances have a method which reads the menu.
 I have used an instance double for the menu rather than a plain double in my takeaway spec, 
 as instance doubles allow us to overcome the limitations associated with the London style of testing.
 
+Update
+
+User Story 2
+
 
 
 

@@ -13,6 +13,7 @@ class Takeaway
   def order_food(items)
     items.each do |name, quantity|
       order.add(name, quantity)
+      "#{quantity} X #{name} added to your basket!"
     end
   end 
 
