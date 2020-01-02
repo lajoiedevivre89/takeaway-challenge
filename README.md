@@ -1,10 +1,23 @@
+I tried one approach, but I have now run into problems, which
+I attribute to the fact that I chose to use an array of hashes.
+
+I am going to approach this slightly differently, using
+a simple hash for the menu, rather than using an array of
+hashes.
+
+
+
+
+
+
+
 Takeaway Challenge
 ==================
 ```
                             _________
               r==           |       |
-           _  //            |  M.A. |   ))))
-          |_)//(''''':      |       |
+           _  //            |  E.M.I|   ))))
+          |_)//(''''':      |   L.Y. |
             //  \_____:_____.-------D     )))))
            //   | ===  |   /        \
        .:'//.   \ \=|   \ /  .:'':./    )))))
