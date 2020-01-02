@@ -1,17 +1,17 @@
 class Menu
-  attr_reader :dishes
+  attr_reader :items
 
-  def initialize(dishes)
-    @dishes = dishes
+  def initialize(items)
+    @items = items
   end 
 
-  def read_menu
-    @dishes.each_with_index do |dish, index|
-      dish.each do |name, price| 
-         puts "#{index+1}. #{name}: £#{price}"
-      end
-    end
-  end
+  def print_items
+    items.map { |name, price| 
+    "%s £%.2f" % [name.to_s.upcase, price]}.join(", ")
+  end 
+
+  
+ 
 
 
 end 

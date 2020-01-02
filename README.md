@@ -5,6 +5,19 @@ I am going to approach this slightly differently, using
 a simple hash for the menu, rather than using an array of
 hashes.
 
+Update
+
+My 'menu' is now made up of one single hash rather than an array of hashes.
+I have used Dependency Injection to inject a menu object into my Takeaway class.
+The Takeaway class's method read_menu() uses this menu object to call on the Menu class's
+print_items() method.
+
+Both menu and takeaway instances have a method which reads the menu.
+
+I have used an instance double for the menu rather than a plain double in my takeaway spec, 
+as instance doubles allow us to overcome the limitations associated with the London style of testing.
+
+
 
 
 
