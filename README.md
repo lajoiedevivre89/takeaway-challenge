@@ -7,6 +7,8 @@ hashes.
 
 Update
 
+User Story 1
+
 My 'menu' is now made up of one single hash rather than an array of hashes.
 I have used Dependency Injection to inject a menu object into my Takeaway class.
 The Takeaway class's method read_menu() uses this menu object to call on the Menu class's
