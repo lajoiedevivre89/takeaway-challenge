@@ -1,3 +1,4 @@
+
 class Order
   attr_reader :basket, :menu
 
@@ -15,7 +16,7 @@ class Order
 
  
     def total
-      item_quantities_total.inject(:+)
+      item_quantities_total.inject(:+) 
     end 
 
     private

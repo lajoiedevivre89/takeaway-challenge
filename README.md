@@ -21,7 +21,30 @@ as instance doubles allow us to overcome the limitations associated with the Lon
 
 Update
 
-User Story 2
+User Story 2  3
+
+A user can add any item that is on the menu with any quantity e.g.
+in irb:
+order.add(:"Chicken Wings", 4)
+=> "4 X Chicken Wings added to your basket"
+order.add(:"Pepperoni Pizza", 2)
+=> "2 X Pepperoni Pizza added to your basket" 
+order.add(:"Olives", 1)
+ => "1 X Olives added to your basket" 
+
+ If the user tries to add an item that isn't on the menu, an error is raised:
+
+ order.add(:"Mushroom Soup", 1)
+ RuntimeError (Mushroom Soup is not on the menu. Cannot be added to your basket)
+
+ The user can check the total by calling the total method on the order object:
+ order.total
+  => 40.83 
+
+  Ideally, I'd want a message returned to the user e.g.
+  "The cost of your total order is: £40.83"
+
+
 
 
 
