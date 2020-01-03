@@ -85,7 +85,7 @@ DEPENDENCIES
   rubocop (= 0.71.0)
   simplecov
   simplecov-console
-  twilio-ruby
+  twilio-ruby (~> 5.31.1)
 
 BUNDLED WITH
    1.17.3
