@@ -8,7 +8,7 @@ class Menu
 
   def print_items
     menu_items.map { |name, price| 
-    "%s £%.2f" % [name.to_s.upcase, price]}.join(", ")
+    "%s £%.2f" % [name.upcase, price]}.join(", ")
   end 
 
   def includes_item?(item)
