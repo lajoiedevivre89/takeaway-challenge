@@ -12,11 +12,9 @@ class Order
     basket[item] = quantity
     "#{quantity} X #{item} added to your basket"
   end 
-  # @basket = {"Olives", 4}
-
  
     def total
-      item_quantities_total.inject(:+) 
+      item_quantities_total.reduce(:+) 
     end 
 
     private
