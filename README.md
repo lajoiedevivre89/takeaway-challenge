@@ -46,6 +46,23 @@ order.add(:"Olives", 1)
 
 
 
+User Story 4
+
+The code snippet that contains the auth_token, account_sid, customer phone number and Twilio number
+could be placed in the Takeaway class.
+However, each class (and method) should have a single responsibility.
+Adding this code to our Takeaway class would mean that the class design would violate the Single Responsibility Principle.
+So, a separate Messenger class has been created to handle this.
+
+A wrapper object was needed to wrap around the Twilio API.
+A configuration hash has been injected into the Messenger class and the configuration has been, in turn,
+injected into the Takeaway class.
+
+I have not hard-coded the 'data', that is to say - the dishes and prices have been
+kept separate and not stored in the Menu class.
+The auth_token, account_sid, customer(my number) and the Twilio number have also not been stored in the 
+Messenger class, and have been kept separate, as per the Open/Closed Principle.
+We want our code to be easy to change.
 
 
 
