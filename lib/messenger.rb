@@ -6,7 +6,7 @@ class Messenger
   attr_reader :client, :config 
  
   
-  TIME = "%d of %B, %Y"
+  TIME = "%k:%M"
 
   def initialize(config, client) # Inject Twilio client into the Messenger class
     @client = client || Twilio::REST::Client.new(config[:account_sid], config[:auth_token])

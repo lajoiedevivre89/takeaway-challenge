@@ -32,7 +32,7 @@ describe Messenger do
         body: "Thank you for ordering with Sin City Slice. Your order will be delivered before 18:52"
       }
       allow(Time).to receive(:now).and_return(Time.parse("17:52")) # Time is an object  allows us to specify a specific time
-      #messenger.send_text # basically setting the current time to always be 5.52 so out message will say delivery will arrived before 6.52
+      #messenger.send_text # basically setting the current time to always be 5.52 so our message will say delivery will arrived before 6.52
       expect(messages).to receive(:create).with(args)
       messenger.send_text
   
